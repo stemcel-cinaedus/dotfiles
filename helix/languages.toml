@@ -1,0 +1,40 @@
+[[language]]
+name = "rust"
+file-types = ["rs"]
+language-servers = ["rust-analyzer"]
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+language-servers = [ "jdtls" ]
+
+[[language]]
+name = "ruby"
+file-types = ["rb"]
+language-servers = ["ruby-lsp"]
+
+[[language]]
+name = "python"
+language-servers = ["ty"]
+
+[[language-server.ty.config]]
+inlayHints.callArgumentNames = false
+experimental.rename = true
+experimental.autoImport = true
+
+[[language]]
+name = "cpp"
+file-types = ["cc"]
+language-servers = ["clangd"]
+
+[[language]]
+name = "bash"
+file-types = [".sh"]
+language-servers = ["bash-language-server"] 
+
+[[language]]
+name = "yaml"
+file-types = ["yaml"]
+language-servers = ["yaml-language-server"]
