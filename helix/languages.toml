@@ -12,6 +12,7 @@ language-servers = [ "jdtls" ]
 
 [[language]]
 name = "ruby"
+injection-regex = "ruby"
 file-types = ["rb"]
 language-servers = ["ruby-lsp"]
 
@@ -38,3 +39,9 @@ language-servers = ["bash-language-server"]
 name = "yaml"
 file-types = ["yaml"]
 language-servers = ["yaml-language-server"]
+
+[[language]]
+name = "haskell"
+file-types = ["hs", "lhs"]
+language-servers = ["haskell-language-server"]
+
